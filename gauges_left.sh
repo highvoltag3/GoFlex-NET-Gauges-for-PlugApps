@@ -1,19 +1,19 @@
 #!/bin/sh
 
 ###############################################
-#											  #
-#   Made by: Dario Novoa V.                	  #
-#   darionovoa [ at ] ideartte.com			  #	
+#                                             #
+#   Made by: Dario Novoa V.                   #
+#   darionovoa [ at ] ideartte.com            #
 #   Activate the front "Gauges" LED lights    #
 #   to show the amount of used space in the   #
-#   specified device						  #
-#											  #
-#	usage add * * * * * /path/to/this/script  #
-#	to the end of your cronjobs 			  #
-#	using: $  crontab -e 					  #
-#											  #
-#	This will execute the script every 1min   #
-#											  #
+#   specified device                          #
+#                                             #
+#	usage add * * * * * /path/to/this/script    #
+#	to the end of your cronjobs                 #
+#	using: $  crontab -e                        #
+#                                             #
+#	This will execute the script every 1min     #
+#                                             #
 ###############################################
 
 DISC=$1
