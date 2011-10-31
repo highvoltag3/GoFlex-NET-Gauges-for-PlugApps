@@ -13,6 +13,7 @@
 # using: $  crontab -e                        #
 #                                             #
 # This will execute the script every 1min     #
+# Read the README for a detailed step by step #
 #                                             #
 ###############################################
 
