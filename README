@@ -1,0 +1,36 @@
+###############################################
+#											  #
+#   Made by: Dario Novoa V.                	  #
+#   darionovoa [ at ] ideartte.com			  #	
+#   Activate the front "Gauges" LED lights    #
+#   to show the amount of used space in the   #
+#   specified device						  #
+#											  #
+###############################################
+
+There are 2 files one for the LEDs on the right for the right disk Dock and the other one for the left.
+
+Usage, 
+
+1) give the correct permission to the script:
+	
+	$ chmod +x gauges_right.sh
+
+2) add:
+
+	* * * * * /path/to/this/gauges_right.sh device(example: sda1)
+
+This is how mine looks 
+	
+	#run MINUTELY   PATH           ARGS(disk) (send results to a log or use /dev/null to get rid of the results)
+	* * * * * /opt/gauges_right.sh sda1 > /root/cronlogs/results_cron.log
+
+to the end of your cronjobs file  using: 
+	
+	$  crontab -e 					 
+	
+
+
+3) Your done! Enjoy, this will execute the script every minute and update your LEDs 
+If you found this useful and wish to buy me a beer:
+- Paypal: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5TNYFML56E4WW
