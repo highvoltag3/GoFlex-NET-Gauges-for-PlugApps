@@ -8,11 +8,11 @@
 #   to show the amount of used space in the   #
 #   specified device                          #
 #                                             #
-#	usage add * * * * * /path/to/this/script    #
-#	to the end of your cronjobs                 #
-#	using: $  crontab -e                        #
+# usage add * * * * * /path/to/this/script    #
+# to the end of your cronjobs                 #
+# using: $  crontab -e                        #
 #                                             #
-#	This will execute the script every 1min     #
+# This will execute the script every 1min     #
 #                                             #
 ###############################################
 
