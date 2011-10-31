@@ -1,11 +1,11 @@
 ###############################################
-#											  #
-#   Made by: Dario Novoa V.                	  #
-#   darionovoa [ at ] ideartte.com			  #	
+#                                             #
+#   Made by: Dario Novoa V.                   #
+#   darionovoa [ at ] ideartte.com            #	
 #   Activate the front "Gauges" LED lights    #
 #   to show the amount of used space in the   #
-#   specified device						  #
-#											  #
+#   specified device                          #
+#                                             #
 ###############################################
 
 There are 2 files one for the LEDs on the right for the right disk Dock and the other one for the left.
