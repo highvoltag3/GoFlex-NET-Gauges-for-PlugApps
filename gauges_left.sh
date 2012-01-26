@@ -33,7 +33,7 @@ then
 
   echo "Your using an amount of disk space that is less or equal to 25%"
 
-elif [ $PERCENT -gt 25 -o $PERCENT -le 50 ]
+elif [ $PERCENT -gt 25 -a $PERCENT -le 50 ]
 then
   echo default-on > /sys/class/leds/status\:white\:left0/trigger
   echo default-on > /sys/class/leds/status\:white\:left1/trigger
@@ -43,7 +43,7 @@ then
 
   echo "Your using an amount of disk space that is less or equal to 50%"
 
-elif [ $PERCENT -gt 50 -o $PERCENT -le 75 ]
+elif [ $PERCENT -gt 50 -a $PERCENT -le 75 ]
 then
   echo default-on > /sys/class/leds/status\:white\:left0/trigger
   echo default-on > /sys/class/leds/status\:white\:left1/trigger
@@ -53,7 +53,7 @@ then
 
   echo "Your using an amount of disk space that is less or equal to 75%"
 
-elif [ $PERCENT -gt 75 -o $PERCENT -le 95 ]
+elif [ $PERCENT -gt 75 -a $PERCENT -le 95 ]
 then
 
   echo default-on > /sys/class/leds/status\:white\:left0/trigger
@@ -65,7 +65,7 @@ then
   echo "Your using an amount of disk space that is greater than 75 but less than 95%"
 
 #When we hit 95% 972.8Mb or more flash the last 2 leds in a synchronized way to warn me Im running out of space
-elif [ $PERCENT -gt 95 -o $PERCENT -le 100 ]
+elif [ $PERCENT -gt 95 -a $PERCENT -le 100 ]
 then
 
 #3 is the upper most led and 0 is the one on the bottom
